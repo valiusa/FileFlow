@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\valen\\OneDrive\\Desktop\\OneBitTask\\Interfaces\\Interfaces.csproj",
+      "projectUniqueName": "C:\\Users\\valen\\Source\\Repos\\FileFlow\\Interfaces\\Interfaces.csproj",
       "projectName": "Interfaces",
-      "projectPath": "C:\\Users\\valen\\OneDrive\\Desktop\\OneBitTask\\Interfaces\\Interfaces.csproj",
+      "projectPath": "C:\\Users\\valen\\Source\\Repos\\FileFlow\\Interfaces\\Interfaces.csproj",
       "packagesPath": "C:\\Users\\valen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\valen\\OneDrive\\Desktop\\OneBitTask\\Interfaces\\obj\\",
+      "outputPath": "C:\\Users\\valen\\Source\\Repos\\FileFlow\\Interfaces\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\valen\\AppData\\Roaming\\NuGet\\NuGet.Config",

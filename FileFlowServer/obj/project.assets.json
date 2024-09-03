@@ -433,11 +433,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\valen\\OneDrive\\Desktop\\OneBitTask\\FileFlowServer\\FileFlowServer.csproj",
+      "projectUniqueName": "C:\\Users\\valen\\Source\\Repos\\FileFlow\\FileFlowServer\\FileFlowServer.csproj",
       "projectName": "FileFlowServer",
-      "projectPath": "C:\\Users\\valen\\OneDrive\\Desktop\\OneBitTask\\FileFlowServer\\FileFlowServer.csproj",
+      "projectPath": "C:\\Users\\valen\\Source\\Repos\\FileFlow\\FileFlowServer\\FileFlowServer.csproj",
       "packagesPath": "C:\\Users\\valen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\valen\\OneDrive\\Desktop\\OneBitTask\\FileFlowServer\\obj\\",
+      "outputPath": "C:\\Users\\valen\\Source\\Repos\\FileFlow\\FileFlowServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\valen\\AppData\\Roaming\\NuGet\\NuGet.Config",

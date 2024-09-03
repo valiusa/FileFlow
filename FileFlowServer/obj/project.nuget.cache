@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "klE5KuyCowQ=",
+  "dgSpecHash": "1CjJLOndZys=",
   "success": true,
-  "projectFilePath": "C:\\Users\\valen\\OneDrive\\Desktop\\OneBitTask\\FileFlowServer\\FileFlowServer.csproj",
+  "projectFilePath": "C:\\Users\\valen\\source\\repos\\FileFlow\\FileFlowServer\\FileFlowServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\valen\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\valen\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

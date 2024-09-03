@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\valen\\OneDrive\\Desktop\\OneBitTask\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\valen\\Source\\Repos\\FileFlow\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\valen\\OneDrive\\Desktop\\OneBitTask\\Data\\Data.csproj",
+      "projectPath": "C:\\Users\\valen\\Source\\Repos\\FileFlow\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\valen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\valen\\OneDrive\\Desktop\\OneBitTask\\Data\\obj\\",
+      "outputPath": "C:\\Users\\valen\\Source\\Repos\\FileFlow\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\valen\\AppData\\Roaming\\NuGet\\NuGet.Config",

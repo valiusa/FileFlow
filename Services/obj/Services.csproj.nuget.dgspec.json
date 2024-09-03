@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\valen\\OneDrive\\Desktop\\OneBitTask\\Services\\Services.csproj": {}
+    "C:\\Users\\valen\\source\\repos\\FileFlow\\Services\\Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\valen\\OneDrive\\Desktop\\OneBitTask\\Services\\Services.csproj": {
+    "C:\\Users\\valen\\source\\repos\\FileFlow\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\valen\\OneDrive\\Desktop\\OneBitTask\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\valen\\source\\repos\\FileFlow\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\valen\\OneDrive\\Desktop\\OneBitTask\\Services\\Services.csproj",
+        "projectPath": "C:\\Users\\valen\\source\\repos\\FileFlow\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\valen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\valen\\OneDrive\\Desktop\\OneBitTask\\Services\\obj\\",
+        "outputPath": "C:\\Users\\valen\\Source\\Repos\\FileFlow\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\valen\\AppData\\Roaming\\NuGet\\NuGet.Config",
