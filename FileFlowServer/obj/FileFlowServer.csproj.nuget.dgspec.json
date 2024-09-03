@@ -11,7 +11,7 @@
         "projectName": "FileFlowServer",
         "projectPath": "C:\\Users\\valen\\source\\repos\\FileFlow\\FileFlowServer\\FileFlowServer.csproj",
         "packagesPath": "C:\\Users\\valen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\valen\\Source\\Repos\\FileFlow\\FileFlowServer\\obj\\",
+        "outputPath": "C:\\Users\\valen\\source\\repos\\FileFlow\\FileFlowServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\valen\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,9 +46,31 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.7.3, )"
             }
           },
           "imports": [
