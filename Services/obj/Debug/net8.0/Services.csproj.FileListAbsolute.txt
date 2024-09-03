@@ -1,0 +1,15 @@
+C:\Users\valen\source\repos\FileFlow\Services\bin\Debug\net8.0\Services.exe
+C:\Users\valen\source\repos\FileFlow\Services\bin\Debug\net8.0\Services.deps.json
+C:\Users\valen\source\repos\FileFlow\Services\bin\Debug\net8.0\Services.runtimeconfig.json
+C:\Users\valen\source\repos\FileFlow\Services\bin\Debug\net8.0\Services.dll
+C:\Users\valen\source\repos\FileFlow\Services\bin\Debug\net8.0\Services.pdb
+C:\Users\valen\source\repos\FileFlow\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valen\source\repos\FileFlow\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+C:\Users\valen\source\repos\FileFlow\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+C:\Users\valen\source\repos\FileFlow\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\valen\source\repos\FileFlow\Services\obj\Debug\net8.0\Services.sourcelink.json
+C:\Users\valen\source\repos\FileFlow\Services\obj\Debug\net8.0\Services.dll
+C:\Users\valen\source\repos\FileFlow\Services\obj\Debug\net8.0\refint\Services.dll
+C:\Users\valen\source\repos\FileFlow\Services\obj\Debug\net8.0\Services.pdb
+C:\Users\valen\source\repos\FileFlow\Services\obj\Debug\net8.0\Services.genruntimeconfig.cache
+C:\Users\valen\source\repos\FileFlow\Services\obj\Debug\net8.0\ref\Services.dll

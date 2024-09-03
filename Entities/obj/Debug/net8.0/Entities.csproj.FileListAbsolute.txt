@@ -1,0 +1,15 @@
+C:\Users\valen\source\repos\FileFlow\Entities\bin\Debug\net8.0\Entities.exe
+C:\Users\valen\source\repos\FileFlow\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\valen\source\repos\FileFlow\Entities\bin\Debug\net8.0\Entities.runtimeconfig.json
+C:\Users\valen\source\repos\FileFlow\Entities\bin\Debug\net8.0\Entities.dll
+C:\Users\valen\source\repos\FileFlow\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\valen\source\repos\FileFlow\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valen\source\repos\FileFlow\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\valen\source\repos\FileFlow\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Users\valen\source\repos\FileFlow\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\valen\source\repos\FileFlow\Entities\obj\Debug\net8.0\Entities.sourcelink.json
+C:\Users\valen\source\repos\FileFlow\Entities\obj\Debug\net8.0\Entities.dll
+C:\Users\valen\source\repos\FileFlow\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Users\valen\source\repos\FileFlow\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\valen\source\repos\FileFlow\Entities\obj\Debug\net8.0\Entities.genruntimeconfig.cache
+C:\Users\valen\source\repos\FileFlow\Entities\obj\Debug\net8.0\ref\Entities.dll

@@ -1,0 +1,1 @@
+C:\Users\valen\source\repos\FileFlow\FileFlowClient\obj\Debug\fileflowclient.esproj.CoreCompileInputs.cache

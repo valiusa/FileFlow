@@ -34,7 +34,7 @@ namespace FileFlowServer.Configuration
             builder.RegisterGeneric(typeof(Repository<>)).As(typeof(IRepository<>)).InstancePerLifetimeScope();
             builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().InstancePerLifetimeScope();
 
-            
+            //builder.RegisterType<UserService>().As<IUserService>().InstancePerDependency();
         }
     }
 
