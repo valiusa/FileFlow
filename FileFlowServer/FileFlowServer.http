@@ -1,0 +1,6 @@
+@FileFlowServer_HostAddress = http://localhost:5017
+
+GET {{FileFlowServer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
