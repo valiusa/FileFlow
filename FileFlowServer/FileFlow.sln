@@ -3,15 +3,30 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35201.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileFlowServer", "FileFlowServer.csproj", "{A3704681-DED5-4B76-876C-F1D0BFDD8BDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileFlowServer", "FileFlowServer.csproj", "{A3704681-DED5-4B76-876C-F1D0BFDD8BDD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2754788A-78CD-4B55-A831-CB47DB1F9EC9} = {2754788A-78CD-4B55-A831-CB47DB1F9EC9}
+		{B1307B2C-1094-4F0D-A105-7D9BF3B49269} = {B1307B2C-1094-4F0D-A105-7D9BF3B49269}
+		{EF7E924F-1057-4E27-955F-022AB414B590} = {EF7E924F-1057-4E27-955F-022AB414B590}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "..\Data\Data.csproj", "{B1307B2C-1094-4F0D-A105-7D9BF3B49269}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "..\Data\Data.csproj", "{B1307B2C-1094-4F0D-A105-7D9BF3B49269}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EF7E924F-1057-4E27-955F-022AB414B590} = {EF7E924F-1057-4E27-955F-022AB414B590}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "..\Entities\Entities.csproj", "{B0CD6B82-AD91-4EB2-B224-BBF46A032679}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "..\Entities\Entities.csproj", "{B0CD6B82-AD91-4EB2-B224-BBF46A032679}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "..\Interfaces\Interfaces.csproj", "{EF7E924F-1057-4E27-955F-022AB414B590}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "..\Interfaces\Interfaces.csproj", "{EF7E924F-1057-4E27-955F-022AB414B590}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B0CD6B82-AD91-4EB2-B224-BBF46A032679} = {B0CD6B82-AD91-4EB2-B224-BBF46A032679}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "..\Services\Services.csproj", "{2754788A-78CD-4B55-A831-CB47DB1F9EC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "..\Services\Services.csproj", "{2754788A-78CD-4B55-A831-CB47DB1F9EC9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B0CD6B82-AD91-4EB2-B224-BBF46A032679} = {B0CD6B82-AD91-4EB2-B224-BBF46A032679}
+		{EF7E924F-1057-4E27-955F-022AB414B590} = {EF7E924F-1057-4E27-955F-022AB414B590}
+	EndProjectSection
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "fileflowclient", "..\FileFlowClient\fileflowclient.esproj", "{253949B8-16EC-440C-A8D1-D34B93AB2F53}"
 EndProject
