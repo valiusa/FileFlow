@@ -11,7 +11,7 @@
         "projectName": "Interfaces",
         "projectPath": "C:\\Users\\valen\\source\\repos\\FileFlow\\Interfaces\\Interfaces.csproj",
         "packagesPath": "C:\\Users\\valen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\valen\\Source\\Repos\\FileFlow\\Interfaces\\obj\\",
+        "outputPath": "C:\\Users\\valen\\source\\repos\\FileFlow\\Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\valen\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
