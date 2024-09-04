@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Entities.DataModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace Data
 {
@@ -11,6 +12,7 @@ namespace Data
         }
 
         // Add DbSet here
+        public virtual DbSet<FileStorage> FileStorages { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -25,6 +27,22 @@ namespace Data
             base.OnModelCreating(modelBuilder);
 
             // Add Entities here
+            modelBuilder.Entity<FileStorage>(entity =>
+            {
+                entity.ToTable("FileStorages");
+
+                entity.HasKey(t => t.Id);
+                entity.Property(t => t.Id).ValueGeneratedOnAdd();
+
+                entity.Property(t => t.Name);
+
+                entity.Property(t => t.Extension);
+
+                entity.Property(t => t.Path);
+
+                entity.Property(t => t.CreatedOn)
+                      .IsRequired(true);
+            });
         }
     }
 }

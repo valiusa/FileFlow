@@ -1,8 +1,10 @@
 ﻿using Autofac;
 using Data;
+using Interfaces;
 using Interfaces.Repository;
 using Interfaces.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
+using Services;
 
 namespace FileFlowServer.Configuration
 {
@@ -34,7 +36,7 @@ namespace FileFlowServer.Configuration
             builder.RegisterGeneric(typeof(Repository<>)).As(typeof(IRepository<>)).InstancePerLifetimeScope();
             builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().InstancePerLifetimeScope();
 
-            //builder.RegisterType<UserService>().As<IUserService>().InstancePerDependency();
+            builder.RegisterType<FileProcessingService>().As<IFileProcessingService>().InstancePerDependency();
         }
     }
 
