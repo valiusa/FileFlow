@@ -148,3 +148,13 @@ C:\Users\valen\source\repos\FileFlow\FileFlowServer\obj\Debug\net8.0\refint\File
 C:\Users\valen\source\repos\FileFlow\FileFlowServer\obj\Debug\net8.0\FileFlowServer.pdb
 C:\Users\valen\source\repos\FileFlow\FileFlowServer\obj\Debug\net8.0\FileFlowServer.genruntimeconfig.cache
 C:\Users\valen\source\repos\FileFlow\FileFlowServer\obj\Debug\net8.0\ref\FileFlowServer.dll
+C:\Users\valen\source\repos\FileFlow\FileFlowServer\bin\Debug\net8.0\Entities.deps.json
+C:\Users\valen\source\repos\FileFlow\FileFlowServer\bin\Debug\net8.0\Entities.runtimeconfig.json
+C:\Users\valen\source\repos\FileFlow\FileFlowServer\bin\Debug\net8.0\Entities.exe
+C:\Users\valen\source\repos\FileFlow\FileFlowServer\bin\Debug\net8.0\Services.deps.json
+C:\Users\valen\source\repos\FileFlow\FileFlowServer\bin\Debug\net8.0\Services.runtimeconfig.json
+C:\Users\valen\source\repos\FileFlow\FileFlowServer\bin\Debug\net8.0\Services.exe
+C:\Users\valen\source\repos\FileFlow\FileFlowServer\bin\Debug\net8.0\Entities.dll
+C:\Users\valen\source\repos\FileFlow\FileFlowServer\bin\Debug\net8.0\Services.dll
+C:\Users\valen\source\repos\FileFlow\FileFlowServer\bin\Debug\net8.0\Entities.pdb
+C:\Users\valen\source\repos\FileFlow\FileFlowServer\bin\Debug\net8.0\Services.pdb

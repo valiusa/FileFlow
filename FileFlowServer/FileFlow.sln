@@ -18,15 +18,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "..\Entities\Entities.csproj", "{B0CD6B82-AD91-4EB2-B224-BBF46A032679}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "..\Interfaces\Interfaces.csproj", "{EF7E924F-1057-4E27-955F-022AB414B590}"
-	ProjectSection(ProjectDependencies) = postProject
-		{B0CD6B82-AD91-4EB2-B224-BBF46A032679} = {B0CD6B82-AD91-4EB2-B224-BBF46A032679}
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "..\Services\Services.csproj", "{2754788A-78CD-4B55-A831-CB47DB1F9EC9}"
-	ProjectSection(ProjectDependencies) = postProject
-		{B0CD6B82-AD91-4EB2-B224-BBF46A032679} = {B0CD6B82-AD91-4EB2-B224-BBF46A032679}
-		{EF7E924F-1057-4E27-955F-022AB414B590} = {EF7E924F-1057-4E27-955F-022AB414B590}
-	EndProjectSection
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "fileflowclient", "..\FileFlowClient\fileflowclient.esproj", "{253949B8-16EC-440C-A8D1-D34B93AB2F53}"
 EndProject

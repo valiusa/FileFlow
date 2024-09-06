@@ -134,3 +134,8 @@ C:\Users\valen\source\repos\FileFlow\Data\obj\Debug\net8.0\refint\Data.dll
 C:\Users\valen\source\repos\FileFlow\Data\obj\Debug\net8.0\Data.pdb
 C:\Users\valen\source\repos\FileFlow\Data\obj\Debug\net8.0\Data.genruntimeconfig.cache
 C:\Users\valen\source\repos\FileFlow\Data\obj\Debug\net8.0\ref\Data.dll
+C:\Users\valen\source\repos\FileFlow\Data\bin\Debug\net8.0\Entities.deps.json
+C:\Users\valen\source\repos\FileFlow\Data\bin\Debug\net8.0\Entities.runtimeconfig.json
+C:\Users\valen\source\repos\FileFlow\Data\bin\Debug\net8.0\Entities.exe
+C:\Users\valen\source\repos\FileFlow\Data\bin\Debug\net8.0\Entities.dll
+C:\Users\valen\source\repos\FileFlow\Data\bin\Debug\net8.0\Entities.pdb

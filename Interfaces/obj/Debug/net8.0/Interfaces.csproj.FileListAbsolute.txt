@@ -25,3 +25,8 @@ C:\Users\valen\source\repos\FileFlow\Interfaces\obj\Debug\net8.0\refint\Interfac
 C:\Users\valen\source\repos\FileFlow\Interfaces\obj\Debug\net8.0\Interfaces.pdb
 C:\Users\valen\source\repos\FileFlow\Interfaces\obj\Debug\net8.0\Interfaces.genruntimeconfig.cache
 C:\Users\valen\source\repos\FileFlow\Interfaces\obj\Debug\net8.0\ref\Interfaces.dll
+C:\Users\valen\source\repos\FileFlow\Interfaces\bin\Debug\net8.0\Entities.deps.json
+C:\Users\valen\source\repos\FileFlow\Interfaces\bin\Debug\net8.0\Entities.runtimeconfig.json
+C:\Users\valen\source\repos\FileFlow\Interfaces\bin\Debug\net8.0\Entities.exe
+C:\Users\valen\source\repos\FileFlow\Interfaces\bin\Debug\net8.0\Entities.dll
+C:\Users\valen\source\repos\FileFlow\Interfaces\bin\Debug\net8.0\Entities.pdb
