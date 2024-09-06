@@ -11,7 +11,7 @@
         "projectName": "Services",
         "projectPath": "C:\\Users\\valen\\source\\repos\\FileFlow\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\valen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\valen\\Source\\Repos\\FileFlow\\Services\\obj\\",
+        "outputPath": "C:\\Users\\valen\\source\\repos\\FileFlow\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\valen\\AppData\\Roaming\\NuGet\\NuGet.Config",
