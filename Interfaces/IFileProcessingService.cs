@@ -2,6 +2,6 @@
 {
     public interface IFileProcessingService
     {
-        // TODO:
+        void UplaodFile(string name,  string path);
     }
 }

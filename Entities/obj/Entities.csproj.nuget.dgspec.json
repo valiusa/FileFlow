@@ -11,7 +11,7 @@
         "projectName": "Entities",
         "projectPath": "C:\\Users\\valen\\source\\repos\\FileFlow\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\valen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\valen\\Source\\Repos\\FileFlow\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\valen\\source\\repos\\FileFlow\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\valen\\AppData\\Roaming\\NuGet\\NuGet.Config",
