@@ -178,7 +178,7 @@ export default function FileGrid() {
                 rows={files}
                 columns={columns}
                 pageSize={5}
-                getRowId={(row) => row.id} // Assuming your API provides unique `id`
+                getRowId={(row) => row.id}
                 components={{
                     NoRowsOverlay: () => <div style={{ padding: 16 }}>No files available</div>,
                 }}
