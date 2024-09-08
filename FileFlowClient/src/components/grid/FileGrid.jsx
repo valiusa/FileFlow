@@ -129,14 +129,10 @@ export default function FileGrid() {
 
     // File columns for the DataGrid
     const columns = [
+        { field: 'id', headerName: 'ID', width: 70 },
         { field: 'name', headerName: 'File Name', flex: 1 },
         { field: 'extension', headerName: 'Extension', flex: 1 },
         { field: 'createdOn', headerName: 'Created On', flex: 1 },
-        {
-            field: 'id', // Include id field
-            headerName: 'ID',
-            hide: true, // Hide the column from view
-        },
         {
             field: 'actions',
             headerName: 'Actions',
@@ -177,6 +173,7 @@ export default function FileGrid() {
                     </Button>
                 </label>
             </Grid>
+
             <DataGrid
                 rows={files}
                 columns={columns}
@@ -186,6 +183,7 @@ export default function FileGrid() {
                     NoRowsOverlay: () => <div style={{ padding: 16 }}>No files available</div>,
                 }}
             />
+
             {/* Confirmation Dialog */}
             <Dialog
                 open={dialogOpen}
