@@ -18,7 +18,7 @@ namespace Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=VALIUSA\\SQLEXPRESS;Initial Catalog=FileFlow;User Id=sa;Password=pass226;TrustServerCertificate=True;Trusted_Connection=True;Encrypt=True;", o => o.UseCompatibilityLevel(120));
+                optionsBuilder.UseSqlServer("Data Source={serverName};Initial Catalog=FileFlow;User Id={userName};Password={password};TrustServerCertificate=True;Trusted_Connection=True;Encrypt=True;", o => o.UseCompatibilityLevel(120));
             }
         }
 
