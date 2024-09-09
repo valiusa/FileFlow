@@ -73,8 +73,8 @@ export default function FileGrid() {
             if (response.ok) {
                 fetchFiles(); // Reload the file list
                 setSelectedFilesCount(0); // Reset the file count after upload
-                setSelectedFiles([]);
-                setEmptyFiles([]);
+                setSelectedFiles([]); // Reset the selected files
+                setEmptyFiles([]); // Resets the empty files
                 setDialogOpen(false); // Close the dialog
                 setErrorMessage(''); // Clear any previous error message
             } else {
@@ -132,7 +132,18 @@ export default function FileGrid() {
         { field: 'id', headerName: 'ID', width: 70 },
         { field: 'name', headerName: 'File Name', flex: 1 },
         { field: 'extension', headerName: 'Extension', flex: 1 },
-        { field: 'createdOn', headerName: 'Created On', flex: 1 },
+        {
+            field: 'createdOn',
+            headerName: 'Created On',
+            flex: 1,
+            renderCell: (params) => {
+                const date = new Date(params.value);
+                const formattedDate = date.toLocaleDateString('en-GB'); // dd-MM-yyyy format
+                return (
+                    <span>{formattedDate}</span>
+                );
+            },
+        },
         {
             field: 'actions',
             headerName: 'Actions',
