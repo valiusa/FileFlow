@@ -50,7 +50,7 @@ namespace Services
             return this.repository.Queryable().AsNoTracking();
         }
 
-        public void UplaodFile(string name, string extension, string path)
+        public void UploadFile(string name, string extension, string path)
         {
             var newFile = new FileStorage();
             newFile.Name = name;

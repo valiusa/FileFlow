@@ -13,6 +13,7 @@ namespace FileFlowServer.Controllers
         private readonly IUnitOfWork unitOfWork;
 
         private readonly string uploadDirectory;
+        private readonly string duplicatesDirectory;
 
         public FileController(IFileProcessingService service, IUnitOfWork unitOfWork)
         {
@@ -20,11 +21,16 @@ namespace FileFlowServer.Controllers
             this.unitOfWork = unitOfWork ?? throw new ArgumentException(nameof(unitOfWork));
 
             uploadDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Files");
+            duplicatesDirectory = Path.Combine(uploadDirectory, "Duplicates");
 
-            // Ensure the directory exists
+            // Ensure the directories exist
             if (!Directory.Exists(uploadDirectory))
             {
                 Directory.CreateDirectory(uploadDirectory);
+            }
+            if (!Directory.Exists(duplicatesDirectory))
+            {
+                Directory.CreateDirectory(duplicatesDirectory);
             }
         }
 
@@ -41,24 +47,39 @@ namespace FileFlowServer.Controllers
                 try
                 {
                     var (name, extension) = GetFileNameAndExtension(file.FileName);
+                    var existingFiles = service.GetAllFiles()
+                                              .Select(f => f.Name + "" + f.Extension)
+                                              .Where(f => f == file.FileName)
+                                              .ToList();
 
-                    if (!IsUnique(name, extension))
+                    // When the file has already been added and there is 1 possible combination with the name and extension
+                    if (existingFiles.Count == 1 && !this.CanBeDividedMoreThanOnce(file.FileName))
                     {
-                        return BadRequest($"File with name '{name}' and extension '{extension}' already exists.");
+                        return Conflict("File has already been uploaded once. No further uploads are allowed.");
                     }
 
-                    // Define the file path
-                    var filePath = Path.Combine(uploadDirectory, file.FileName);
-
-                    this.service.UplaodFile(name, extension, filePath);
-
-                    if (this.unitOfWork.SaveChanges() > 0)
+                    // First upload: save in the Files directory
+                    if (existingFiles.Count == 0)
                     {
-                        // Save the file to the directory
-                        using (var stream = new FileStream(filePath, FileMode.Create))
-                        {
-                            file.CopyTo(stream);
-                        }
+                        this.SaveFile(file, name, extension, uploadDirectory);
+                        this.service.UploadFile(name, extension, Path.Combine(uploadDirectory, file.FileName));
+                        this.unitOfWork.SaveChanges();
+                    }
+                    // Second upload: move to Duplicates directory with new name structure
+                    else if (existingFiles.Count == 1)
+                    {
+                        // Change name to test and extension to .prod.txt
+                        var newName = name.Split('.').First();
+                        var newExtension = "." + string.Join(".", name.Split('.').Skip(1)) + extension;
+
+                        this.SaveFile(file, newName, newExtension, duplicatesDirectory);
+                        this.service.UploadFile(newName, newExtension, Path.Combine(duplicatesDirectory, newName + newExtension));
+                        this.unitOfWork.SaveChanges();
+                    }
+                    // Third upload: return error, no further uploads allowed
+                    else
+                    {
+                        return StatusCode(429, "File has already been uploaded twice. No further uploads are allowed.");
                     }
                 }
                 catch (Exception ex)
@@ -76,11 +97,11 @@ namespace FileFlowServer.Controllers
             try
             {
                 var files = this.service.GetAllFiles().ToList();
-                return Ok(files); // Wrap the result in an Ok response
+                return Ok(files);
             }
             catch (Exception ex)
             {
-                return StatusCode(500, $"Internal server error: {ex.Message}"); // Handle exceptions
+                return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
 
@@ -89,52 +110,46 @@ namespace FileFlowServer.Controllers
         {
             try
             {
-                // Attempt to delete the file
                 this.service.DeleteFile(key);
                 this.unitOfWork.SaveChanges();
-
-                // Return a success response
                 return Ok("File deleted successfully.");
             }
             catch (FileNotFoundException ex)
             {
-                // Return a 404 Not Found response if the file was not found
                 return NotFound($"File not found: {ex.Message}");
-            }
-            catch (InvalidOperationException ex)
-            {
-                // Return a 500 Internal Server Error response for issues with file deletion
-                return StatusCode(500, $"Error deleting file: {ex.Message}");
             }
             catch (Exception ex)
             {
-                // Return a 500 Internal Server Error for any other unexpected errors
-                return StatusCode(500, $"An unexpected error occurred: {ex.Message}");
+                return StatusCode(500, $"Error deleting file: {ex.Message}");
             }
+        }
+
+        private void SaveFile(IFormFile file, string name, string extension, string directory)
+        {
+            var filePath = Path.Combine(directory, name + extension);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                file.CopyTo(stream);
+            }
+        }
+
+        private bool CanBeDividedMoreThanOnce(string fileName)
+        {
+            return fileName.Split('.').Count() > 2; // if file name is test.txt when we split => [test, txt] there is only 1 combiantion, but if it is test.prod.txt => [test, prod, txt] there are multiple combinations
         }
 
         private (string name, string extension) GetFileNameAndExtension(string fileName)
         {
-            // Split file name and extension
             var parts = fileName.Split('.');
             if (parts.Length < 2)
             {
                 return (fileName, string.Empty); // Handle cases without an extension
             }
 
-            // Separate the file name and extension
             var extension = $".{parts.Last()}";
             var name = string.Join('.', parts.Take(parts.Length - 1));
-
             return (name, extension);
-        }
-
-        private bool IsUnique(string name, string extension)
-        {
-            // Check if the combination of name and extension is unique
-            // This should query the database or storage to ensure uniqueness
-            var existingFiles = service.GetAllFiles();
-            return !existingFiles.Any(file => file.Name == name && file.Extension == extension);
         }
     }
 }
