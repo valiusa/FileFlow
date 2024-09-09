@@ -59,7 +59,7 @@ namespace FileFlowServer.Test
             this.mockFileProcessingService.Setup(s => s.GetAllFiles())
                 .Returns(existingFiles);  // Return an IQueryable
 
-            this.mockFileProcessingService.Setup(s => s.UplaodFile(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>()));
+            this.mockFileProcessingService.Setup(s => s.UploadFile(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>()));
             this.mockUnitOfWork.Setup(u => u.SaveChanges()).Returns(1);
 
             // Act
